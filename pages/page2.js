@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-export default function Home(props) {
+export default function Page2(props) {
   console.log(`rendering ${props.name}`);
   return (
     <div>
@@ -18,7 +18,7 @@ export default function Home(props) {
 export async function getServerSideProps(context) {
   return {
     props: {
-      name: "Home",
+      name: "Page2",
     },
   };
 }
